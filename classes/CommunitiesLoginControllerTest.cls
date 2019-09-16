@@ -4,6 +4,7 @@
 @IsTest global with sharing class CommunitiesLoginControllerTest {
     @IsTest(SeeAllData=true) 
     global static void testCommunitiesLoginController () {
-     	System.assertEquals(1, 2);       
+     	CommunitiesLoginController controller = new CommunitiesLoginController();
+     	System.assertEquals(null, controller.forwardToAuthPage());       
     }    
 }
