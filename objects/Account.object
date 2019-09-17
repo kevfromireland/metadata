@@ -267,39 +267,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SLA__c</fullName>
-        <externalId>false</externalId>
-        <label>SLA</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Gold</fullName>
-                    <default>false</default>
-                    <label>Gold</label>
-                </value>
-                <value>
-                    <fullName>Silver</fullName>
-                    <default>false</default>
-                    <label>Silver</label>
-                </value>
-                <value>
-                    <fullName>Platinum</fullName>
-                    <default>false</default>
-                    <label>Platinum</label>
-                </value>
-                <value>
-                    <fullName>Bronze</fullName>
-                    <default>false</default>
-                    <label>Bronze</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>ShippingAddress</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -423,37 +390,93 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableFeeds>true</enableFeeds>
-    <enableHistory>false</enableHistory>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <searchLayouts>
-        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <fullName>Name</fullName>
+    <trackFeedHistory>false</trackFeedHistory>
+  </fields>
+  <fields>
+    <fullName>OwnerId</fullName>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+  </fields>
+  <fields>
+        <fullName>SLA__c</fullName>
+        <externalId>false</externalId>
+        <label>SLA</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Industry</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gold</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Gold</label>
+                </value>
+                <value>
+                    <fullName>Silver</fullName>
+                    <color>#BBBBBB</color>
+                    <default>false</default>
+                    <label>Silver</label>
+                </value>
+                <value>
+                    <fullName>Platinum</fullName>
+                    <color>#9999FF</color>
+                    <default>false</default>
+                    <label>Platinum</label>
+                </value>
+                <value>
+                    <fullName>Bronze</fullName>
+                    <color>#A53711</color>
+                    <default>false</default>
+                    <label>Bronze</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Agriculture</controllingFieldValue>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Bronze</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Gold</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Apparel</controllingFieldValue>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Biotechnology</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Silver</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Banking</controllingFieldValue>
+                <controllingFieldValue>Chemicals</controllingFieldValue>
+                <valueName>Platinum</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>true</enableFeeds><enableHistory>false</enableHistory><searchLayouts>
+    <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+    <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
+    <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+    <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+    <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+    <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+    <lookupDialogsAdditionalFields>ACCOUNT.TYPE</lookupDialogsAdditionalFields>
+    <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+    <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+    <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+    <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+    <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+    <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+    <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+    <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+    <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+  </searchLayouts>
     <listViews>
         <fullName>MyAccounts</fullName>
         <filterScope>Mine</filterScope>
@@ -480,21 +503,33 @@
         <label>Platinum and Gold SLA Customers</label>
     </listViews>
     <listViews>
-        <fullName>AllAccounts</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>NewThisWeek</fullName>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>THIS_WEEK</value>
-        </filters>
-        <label>New This Week</label>
-    </listViews>
-    <webLinks>
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Accounts</label>
+  </listViews>
+  <listViews>
+    <fullName>NewThisWeek</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+      <field>ACCOUNT.CREATED_DATE</field>
+      <operation>equals</operation>
+      <value>THIS_WEEK</value>
+    </filters>
+    <label>New This Week</label>
+  </listViews>
+  <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>
         <displayType>link</displayType>

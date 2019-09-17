@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
@@ -122,6 +122,11 @@
         <label>Not For Profit</label>
     </standardValue>
     <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
         <fullName>Recreation</fullName>
         <default>false</default>
         <label>Recreation</label>
@@ -155,10 +160,5 @@
         <fullName>Utilities</fullName>
         <default>false</default>
         <label>Utilities</label>
-    </standardValue>
-    <standardValue>
-        <fullName>Other</fullName>
-        <default>false</default>
-        <label>Other</label>
     </standardValue>
 </StandardValueSet>
