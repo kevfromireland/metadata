@@ -126,16 +126,7 @@
         <type>Default</type>
     </actionOverrides>
     <fields>
-        <fullName>DefaultAuthFormTextId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>EffectiveFromDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>EffectiveToDate</fullName>
+        <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -143,32 +134,26 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>RevisionNumber</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>IsSignatureRequired</fullName>
+        <fullName>Source</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <searchLayouts>
-        <customTabListAdditionalFields>RevisionNumber</customTabListAdditionalFields>
-        <customTabListAdditionalFields>EffectiveFromDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>EffectiveToDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Source</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>RevisionNumber</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>EffectiveFromDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>EffectiveToDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Source</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
     <listViews>
-        <fullName>All_AuthorizationForms</fullName>
+        <fullName>All_DataUseLegalBases</fullName>
         <filterScope>Everything</filterScope>
-        <label>All Authorization Forms</label>
+        <label>All Data Use Legal Bases</label>
     </listViews>
 </CustomObject>
